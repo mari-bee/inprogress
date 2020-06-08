@@ -13,11 +13,11 @@ $(document).ready(function () {
   $('.about-toggle_show').click(function () {
     $(this).prev('.toggle-text').slideToggle(200);
 
-    if ($('.about-toggle_show').hasClass('active')) {
+    if ($(this).hasClass('active')) {
       $(this).html('Свернуть');
     } else {
       $(this).html('Читать дальше');
     }
-    $('.about-toggle_show').toggleClass('active');
+    $(this).toggleClass('active');
   });
 });
